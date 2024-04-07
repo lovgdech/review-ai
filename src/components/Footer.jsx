@@ -13,7 +13,7 @@ function Footer() {
             to="/"
           >{`<ReviewAI />`}</Link>
 
-          <div className="flex flex-col gap-2 items-start">
+          <div className="flex flex-col gap-2 col-span-3 items-start">
             <h5 className="text-lg font-bold">Pages</h5>
             <ul className="w-full flex flex-col gap-2">
               <li>
@@ -66,112 +66,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-2 items-start">
-            <h5 className="text-lg font-bold">Pages</h5>
-            <ul className="w-full flex flex-col gap-2">
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="about-us"
-                  end
-                >
-                  About us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="ai-tools"
-                  end
-                >
-                  AI tools
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="blogs"
-                  end
-                >
-                  Blogs
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="contact"
-                  end
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-2 items-start">
-            <h5 className="text-lg font-bold">Pages</h5>
-            <ul className="w-full flex flex-col gap-2">
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="about-us"
-                  end
-                >
-                  About us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="ai-tools"
-                  end
-                >
-                  AI tools
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="blogs"
-                  end
-                >
-                  Blogs
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={`${({ isActive }) =>
-                    isActive
-                      ? "underline"
-                      : ""} text-base hover:text-gray-300 hover:underline`}
-                  to="contact"
-                  end
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+
           <div className="flex flex-col gap-1 items-start col-span-2">
             <h5 className="text-lg font-bold">Subscribe</h5>
             <div className="w-full flex flex-col gap-2">

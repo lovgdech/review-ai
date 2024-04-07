@@ -1,5 +1,21 @@
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
+
 function SignInPage() {
-  return <div>SignInPage</div>;
+  return (
+    <header>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
+  );
 }
 
 export default SignInPage;

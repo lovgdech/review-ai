@@ -1,24 +1,32 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 function MainNavigation() {
-  const [showBgNav, setShowBgNav] = useState(window.scrollY > 100);
-  const [showNavbar, setShowNavbar] = useState(window.scrollY < 100);
+  const [showBgNav, setShowBgNav] = useState(window.scrollY > 50);
+  const [showNavbar, setShowNavbar] = useState(window.scrollY < 50);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     let prevScrollY = window.scrollY;
 
     function handleScroll() {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > 100) {
+      if (currentScrollY > 50) {
         setShowBgNav(true);
       } else {
         setShowBgNav(false);
       }
 
-      if (prevScrollY < currentScrollY && currentScrollY > 100)
+      if (prevScrollY < currentScrollY && currentScrollY > 50)
         setShowNavbar(false);
       else setShowNavbar(true);
       prevScrollY = currentScrollY;
@@ -46,48 +54,50 @@ function MainNavigation() {
         <ul className="flex flex-1 justify-end items-center gap-6">
           <li>
             <NavLink
-              className={`${({ isActive }) =>
-                isActive
-                  ? "underline"
-                  : ""} text-base hover:text-gray-300 hover:underline`}
-              to="about-us"
-              end
+              className={`text-base hover:text-gray-300 hover:underline ${({
+                isActive,
+              }) => (isActive ? "text-gray-300 underline" : "")} `}
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={`text-base hover:text-gray-300 hover:underline ${({
+                isActive,
+              }) => (isActive ? "text-gray-300 underline" : "")} `}
+              to="/about-us"
             >
               About us
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={`${({ isActive }) =>
-                isActive
-                  ? "underline"
-                  : ""} text-base hover:text-gray-300 hover:underline`}
-              to="ai-tools"
-              end
+              className={`text-base hover:text-gray-300 hover:underline ${({
+                isActive,
+              }) => (isActive ? "text-gray-300 underline" : "")} `}
+              to="/ai-tools"
             >
               AI tools
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={`${({ isActive }) =>
-                isActive
-                  ? "underline"
-                  : ""} text-base hover:text-gray-300 hover:underline`}
-              to="blogs"
-              end
+              className={`text-base hover:text-gray-300 hover:underline ${({
+                isActive,
+              }) => (isActive ? "text-gray-300 underline" : "")} `}
+              to="/blogs"
             >
               Blogs
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={`${({ isActive }) =>
-                isActive
-                  ? "underline"
-                  : ""} text-base hover:text-gray-300 hover:underline`}
-              to="contact"
-              end
+              className={`text-base hover:text-gray-300 hover:underline ${({
+                isActive,
+              }) => (isActive ? "text-gray-300 underline" : "")} `}
+              to="/contact"
             >
               Contact
             </NavLink>
@@ -95,12 +105,16 @@ function MainNavigation() {
         </ul>
 
         <div>
-          <Button
-            className="text-base h-9 bg-transparent border rounded-md border-gray-300"
-            variant="outline"
-          >
-            Sign in
-          </Button>
+          <SignedOut>
+            <SignInButton>
+              <Button className="text-base h-9 bg-transparent border rounded-md border-gray-300">
+                Sign in
+              </Button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
       </div>
     </header>

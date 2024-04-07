@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 import { Button } from "@/components/ui/button";
 
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="w-full h-screen min-h-[700px]">
       <div className="w-full h-screen absolute top-0 overflow-hidden -z-10">
@@ -24,12 +27,16 @@ function Hero() {
         </p>
         <div className="flex items-center gap-4">
           <Button
+            onClick={() => navigate("/ai-tools")}
             variant="outline"
             className="text-base min-w-32 h-12 rounded-lg bg-transparent hover:text-gray-300 hover:border-gray-300 hover:bg-transparent"
           >
             Get started
           </Button>
-          <Button className="text-base min-w-32 h-12 rounded-lg bg-gray-300 text-black hover:bg-gray-50">
+          <Button
+            onClick={() => navigate("/about-us")}
+            className="text-base min-w-32 h-12 rounded-lg bg-gray-300 text-black hover:bg-gray-50"
+          >
             About us
           </Button>
         </div>
