@@ -10,7 +10,7 @@ import {
   ContactPage,
   ErrorPage,
   AiToolPage,
-  BlogPage,
+  // BlogPage,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -31,10 +31,10 @@ const router = createBrowserRouter([
         path: "ai-tools",
         element: <AiToolPage />,
       },
-      {
-        path: "blogs",
-        element: <BlogPage />,
-      },
+      // {
+      //   path: "blogs",
+      //   element: <BlogPage />,
+      // },
       {
         path: "contact",
         element: <ContactPage />,

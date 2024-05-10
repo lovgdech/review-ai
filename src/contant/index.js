@@ -48,3 +48,38 @@ export const ABOUT_US = [
     content: `During 55 years of construction and development, Sao Do University has been awarded many noble titles and awards by the Party and State, including Medals and Certificates of Merit from prestigious agencies and organizations. These achievements have been recognized and honored in important celebrations and events of the School. With the spirit of solidarity, creativity and unremitting efforts, the School has successfully fulfilled its mission in training and providing high-quality human resources for industrial development and modernization of the country. . This is the result of the dedication and sacrifice of previous generations of officials, lecturers and students, and is also the motivation for current and future generations to continue to develop and rise.`,
   },
 ];
+
+export const AI_TOOLS = [
+  {
+    title: "ChatGPT tool website",
+    path: "https://chat.openai.com/",
+    description:
+      "ChatGPT is an artificial intelligence (AI) chatbot that uses natural language processing to create humanlike conversational dialogue. The language model can respond to questions and compose various written content, including articles, social media posts, essays, code and emails. ChatGPT is a form of generative AI -- a tool that lets users enter prompts to receive humanlike images, text or videos that are created by AI. ChatGPT is similar to the automated chat services found on customer service websites, as people can ask it questions or request clarification to ChatGPT's replies. The GPT stands for 'Generative Pre-trained Transformer,' which refers to how ChatGPT processes requests and formulates responses. ChatGPT is trained with reinforcement learning through human feedback and reward models that rank the best responses. This feedback helps augment ChatGPT with machine learning to improve future responses.",
+    imgUrl: "chatgpt.png",
+    videoUrl: "akumaAI.mp4",
+  },
+  {
+    title: "AkumaAI tool website",
+    path: "https://akuma.ai/generate",
+    description:
+      "Akuma.ai is an online tool that uses artificial intelligence (AI) to create anime artwork. Through Stable Diffusion templates, users can create characters, settings, and stories in a variety of styles, from classic 90s anime to modern, detailed looks.Akuma AI simply turns simple sketches into dazzling anime art in real time, with full control over the creative process you can easily create AI Art in no time.Akuma's AI features. 1. Real-time controlo In real time, Akuma AI allows users to create everything from basic sketches to complex anime artwork. It's like having a superpower to instantly express visual ideas. 2. Easy Anime Art Generatoro No technical setup or fancy graphics card required! Anime Art Generator is user-friendly, making it easy for anyone to create high-quality AI images. You can try installing using the Stable Diffusion web interface, even if you're new to this.3. Upload your own modelo Akuman AI's real-time canvas is friendly to any Steady Diffusion model you like. With Akuma, uploading your favorite Stable Diffusion models to the cloud is easy. You can start creating personalized AI images without any complicated setup.Akuma AI CanvasThis mode allows for real-time creation of artwork. Use the pen tool to draw, erase, change colors, and adjust pen and brush settings. You can upgrade and download your finished artwork.Akuma AI streamlines the anime art creation process, making it accessible and fun for everyone. With a few simple steps, you're ready to create beautiful works of anime art.In short, Akuma AI invites everyone to immerse themselves in a world where creativity has no limits. Whether you're a beginner or a pro, this platform is your gateway to a fascinating artistic journey in the digital age.",
+    imgUrl: "akumaAi.png",
+    videoUrl: "akumaAI.mp4",
+  },
+  {
+    title: "InvideoAI tool website",
+    path: "https://invideo.io/",
+    description:
+      "InVideo is an online video editing and editing platform similar to Powtoon, Promo.com. Currently, this platform has more than 4,000 templates and more than 50 diverse themes with many different topics. Thanks to these available templates, you can create professional, eye-catching videos in under 15 minutes. If you are a creative person, from these templates you can easily edit in many different ways to Match your own brand or personal touch. InVideo also provides Blank templates (completely blank) for you to start realizing your ideas into attractive videos that attract viewers. InVideo.io - Create Stunning Video Ads Easily, Flexibly, Quickly. InVideo has more than 4,000 templates and more than 50 diverse themes. Currently, more than 1.5 million people are using InVideo. This is an application that helps you design and edit videos, with many features and easy to use. When you complete the video and download it to your device, your video will not have any watermark from InVideo. One of the advantages of InVideo is that this application owns more than 9 million resources from media stores of iStock, Shutterstock, Pixabay, Pexels. InVideo also includes similar features found in Screenflow or Camtasia. Instead of using separate video editing software, you can now integrate and use many features on InVideo. InVideo is really useful in helping you create many different content in the shortest time. . If you want each YouTube video to have a different intro/outro, or you want all Instagram posts to be in video format... then InVideo is the most suitable choice for you. For example, it only takes about 1 hour to create all the posts in a week for Instagram. InVideo's templates include 3 video sizes in ratios (16:9, 1:1 and 9:16) suitable for many different platforms.",
+    imgUrl: "invideoai.png",
+    videoUrl: "invideoAI.mp4",
+  },
+  {
+    title: "BingCreate tool website",
+    path: "https://www.bing.com/images/create",
+    description:
+      "Bing Image Creator is a newly integrated visualization tool that combines the power of artificial intelligence and Knowledge Cards to help users create the easiest, most realistic images. Powered by Microsoft and developed with contributions from an enhanced version of partner OpenAI's DALL∙E model, this tool allows users to use descriptive language to create images in their imagination. Bing Image Creator is an innovative tool that plays an important role in search. Data from Bing shows that visuals are one of the most popular search categories, and provide a rich, visual means to communicate ideas and information. With Bing Image Creator, creating images during chat is easier than ever. Users can describe images in detail, provide additional information and choose from a variety of art styles, creating unique images according to their ideas, not duplicated by anyone else.",
+    imgUrl: "bingcreate.png",
+    videoUrl: "bingCreate.mp4",
+  },
+];

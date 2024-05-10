@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { Link, useNavigate } from "react-router-dom";
+import { AI_TOOLS } from "../contant";
 
 function AiTools() {
+  const navigate = useNavigate();
   return (
     <div className="w-full text-gray-700 bg-[#F5F5F5] py-10">
       <div className="w-full max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-8 flex flex-col gap-6">
@@ -12,139 +15,45 @@ function AiTools() {
         </p>
 
         <div className="grid grid-cols-2 gap-4">
-          <div className="rounded-lg shadow-lg p-4 flex flex-col gap-3 bg-white transition">
-            <img
-              className="w-auto h-full max-h-[300px] object-contain mx-auto object-center rounded-md"
-              src="chatgpt.png"
-              alt="akumaai image"
-            />
-            <h3 className="font-bold text-xl">
-              1. ChatGPT tool website{" "}
-              <span className="font-mono text-base text-yellow-500">
-                (free)
-              </span>
-            </h3>
-            <p className="line-clamp-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              ea. Numquam ipsam beatae voluptatum voluptatibus. Nulla, nobis
-              quae voluptates error neque expedita tempora alias iure temporibus
-              consequuntur veniam voluptas recusandae.
-            </p>
-            <div className="w-full flex items-center">
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
+          {AI_TOOLS.map((el, i) => (
+            <div
+              key={i}
+              className="rounded-lg shadow-lg p-4 flex flex-col gap-3 bg-white transition"
+            >
+              <img
+                className="w-auto h-full max-h-[300px] object-contain mx-auto object-center rounded-md"
+                src={el.imgUrl}
+                alt={el.title}
+              />
+              <h3 className="font-bold text-xl">
+                {`${i + 1}. ${el.title}`}
+                <span className="font-mono text-base text-yellow-500">
+                  (free)
+                </span>
+              </h3>
+              <p className="line-clamp-4">{el.description}</p>
+              <div className="w-full flex items-center">
+                <img className="h-8 w-8" src="star.png" alt="star" />
+                <img className="h-8 w-8" src="star.png" alt="star" />
+                <img className="h-8 w-8" src="star.png" alt="star" />
+                <img className="h-8 w-8" src="star.png" alt="star" />
+                <img className="h-8 w-8" src="star.png" alt="star" />
+              </div>
+              <div className="w-full flex items-center gap-4">
+                <Button className="min-w-28">Read more</Button>
+                <Link to={el.path}>
+                  <Button className="min-w-28" variant="outline">
+                    Try it
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <div className="w-full flex items-center gap-4">
-              <Button className="min-w-28">Read more</Button>
-              <Button className="min-w-28" variant="outline">
-                Try it
-              </Button>
-            </div>
-          </div>
-          <div className="rounded-lg shadow-lg p-4 flex flex-col gap-3 bg-white transition">
-            <img
-              className="w-auto h-full max-h-[300px] object-contain mx-auto object-center rounded-md"
-              src="akumaAi.png"
-              alt="akumaai image"
-            />
-            <h3 className="font-bold text-xl">
-              2. AkumaAI tool website{" "}
-              <span className="font-mono text-base text-yellow-500">
-                (free)
-              </span>
-            </h3>
-            <p className="line-clamp-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              ea. Numquam ipsam beatae voluptatum voluptatibus. Nulla, nobis
-              quae voluptates error neque expedita tempora alias iure temporibus
-              consequuntur veniam voluptas recusandae.
-            </p>
-            <div className="w-full flex items-center">
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <Button className="min-w-28">Read more</Button>
-              <Button className="min-w-28" variant="outline">
-                Try it
-              </Button>
-            </div>
-          </div>
-          <div className="rounded-lg shadow-lg p-4 flex flex-col gap-3 bg-white transition">
-            <img
-              className="w-auto h-full max-h-[300px] object-contain mx-auto object-center rounded-md"
-              src="invideoai.png"
-              alt="akumaai image"
-            />
-            <h3 className="font-bold text-xl">
-              3. InvideoAI tool website{" "}
-              <span className="font-mono text-base text-yellow-500">
-                (free)
-              </span>
-            </h3>
-            <p className="line-clamp-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              ea. Numquam ipsam beatae voluptatum voluptatibus. Nulla, nobis
-              quae voluptates error neque expedita tempora alias iure temporibus
-              consequuntur veniam voluptas recusandae.
-            </p>
-            <div className="w-full flex items-center">
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <Button className="min-w-28">Read more</Button>
-              <Button className="min-w-28" variant="outline">
-                Try it
-              </Button>
-            </div>
-          </div>
-          <div className="rounded-lg shadow-lg p-4 flex flex-col gap-3 bg-white transition">
-            <img
-              className="w-auto h-full max-h-[300px] object-contain mx-auto object-center rounded-md"
-              src="bingcreate.png"
-              alt="akumaai image"
-            />
-            <h3 className="font-bold text-xl">
-              4. BingCreate tool website{" "}
-              <span className="font-mono text-base text-yellow-500">
-                (free)
-              </span>
-            </h3>
-            <p className="line-clamp-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              ea. Numquam ipsam beatae voluptatum voluptatibus. Nulla, nobis
-              quae voluptates error neque expedita tempora alias iure temporibus
-              consequuntur veniam voluptas recusandae.
-            </p>
-            <div className="w-full flex items-center">
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-              <img className="h-8 w-8" src="star.png" alt="star" />
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <Button className="min-w-28">Read more</Button>
-              <Button className="min-w-28" variant="outline">
-                Try it
-              </Button>
-            </div>
-          </div>
+          ))}
         </div>
-
         <Button
           className="w-max mx-auto text-base hover:underline"
           variant="ghost"
+          onClick={() => navigate("ai-tools")}
         >
           More AI tools ...
         </Button>

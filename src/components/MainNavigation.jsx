@@ -82,7 +82,7 @@ function MainNavigation() {
               AI tools
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className={`text-base hover:text-gray-300 hover:underline ${({
                 isActive,
@@ -91,7 +91,7 @@ function MainNavigation() {
             >
               Blogs
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               className={`text-base hover:text-gray-300 hover:underline ${({
