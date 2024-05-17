@@ -7,7 +7,7 @@ function AiTools() {
   return (
     <div className="w-full text-gray-700 bg-[#F5F5F5] py-10">
       <div className="w-full max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-8 flex flex-col gap-6">
-        <h3 className="text-3xl font-bold text-center">AI tools</h3>
+        <h3 className="text-3xl font-bold text-center">AI tools popular</h3>
         <p className="w-full text-lg text-center max-w-[1000px] mx-auto">
           There are numerous AI tools available across various domains, each
           offering different functionalities and capabilities. Here are some
@@ -41,7 +41,7 @@ function AiTools() {
               </div>
               <div className="w-full flex items-center gap-4">
                 <Button className="min-w-28">Read more</Button>
-                <Link to={el.path}>
+                <Link to={el.path} target="_blank">
                   <Button className="min-w-28" variant="outline">
                     Try it
                   </Button>

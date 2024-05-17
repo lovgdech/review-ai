@@ -83,3 +83,310 @@ export const AI_TOOLS = [
     videoUrl: "bingCreate.mp4",
   },
 ];
+
+export const AI_TOOLS_OTHER = [
+  {
+    title: "AI Chatbot tool supports answering questions",
+    elements: [
+      {
+        title: "Poe",
+        path: "https://poe.com/",
+        description:
+          "When it comes to artificial intelligence (AI) in answering questions, ChatGPT cannot be ignored - a software developed by OpenAI company and introduced at the end of 2021. ChatGPT has created a wave of feedback. Be proactive and delight many people with your ability to answer questions and solve other problems with human expertise and completeness. It can provide information, translate, find recipes, solve math problems, write code, write music, write poetry, have fun and more, in a natural response style. and almost human-like.",
+      },
+      {
+        title: "Text",
+        path: "https://texti.app/",
+        description:
+          "Developed in the same Generative AI style as ChatGPT, Texti is a helper that writes new content from our data set without repeating what is already there. It can answer common questions and write different content. Additionally, it can be installed directly on our browser.",
+      },
+      {
+        title: "Nuclia",
+        path: "https://nuclia.com/",
+        description:
+          "This is an artificial intelligence tool that helps search and analyze data from diverse knowledge sources, allowing search results to be displayed in text and animation form.",
+      },
+      {
+        title: "Google Bard (Gemini)",
+        path: "https://gemini.google.com/",
+        description:
+          "Google Bard is chatbot technology developed by Google. Although not yet officially introduced, from those who have tested it, Bard has shown the potential to compete with ChatGPT in terms of performance. This is done using the LaMDA (Language Model for Dialogue Applications) language model developed by Google itself. LaMDA is a continuous language understanding system that makes conversation natural and human-like, while also capturing complex information. According to Sundar Pichai, CEO of Alphabet, Bard will be expanding its service range in the coming weeks.",
+      },
+    ],
+  },
+  {
+    title: "AI tools support writing and editing text",
+    elements: [
+      {
+        title: "Pragma",
+        path: "https://www.pragma.ai/",
+        description:
+          "AI tools help write emails and manage documents for work. It can search text, suggest vocabulary, and correct writing errors.",
+      },
+      {
+        title: "Craftly",
+        path: "https://www.craftly.ai/",
+        description:
+          "AI tools help write many different types of content, including emails, articles, and content marketing. Just enter your brand name, title and target group, and the program will automatically generate the content you need.",
+      },
+      {
+        title: "WordTune",
+        path: "https://www.wordtune.com/",
+        description:
+          "The program helps read and correct text errors, improving the structure and appearance of the text. Just enter text and choose how you want to modify it.",
+      },
+      {
+        title: "Compose AI",
+        path: "https://www.compose.ai/",
+        description:
+          "AI tool helps suggest vocabulary for text. The program also helps create content and respond to emails.",
+      },
+      {
+        title: "Instoried",
+        path: "https://instoried.com/",
+        description:
+          "Tools to help write content for advertising, marketing, and e-commerce. The program offers a choice of different writing styles, including authentic, formal, touching and trustworthy styles.",
+      },
+      {
+        title: "Copy AI",
+        path: "https://www.copy.ai/",
+        description:
+          "Tools to help write emails, articles and content for social networks. The program can write in more than 25 different languages.",
+      },
+      {
+        title: "Notion",
+        path: "https://www.notion.so/product/ai",
+        description:
+          "The tool helps write many different types of content, from emails to entertainment content. It also has spell checking and language translation features.",
+      },
+      {
+        title: "Texta",
+        path: "https://www.texta.ai/",
+        description:
+          "Tools to help write content for search engine optimization (SEO). There are over 50 different writing styles and content can be posted on social media channels.",
+      },
+      {
+        title: "Smartwriter",
+        path: "https://www.smartwriter.ai/",
+        description:
+          "Tools to help write emails, applications and other content for organizations. This program is used by many famous companies such as Facebook, Meta and Uber",
+      },
+      {
+        title: "Jasper",
+        path: "https://www.jasper.ai/",
+        description:
+          "Jasper is an AI tool designed to help users create content in a variety of formats such as commerce, marketing, or news writing. The tool also allows users to create promotional images, thumbnails, and illustrations.",
+      },
+      {
+        title: "Grammarly",
+        path: "https://www.grammarly.com/",
+        description:
+          "Is one of the most popular and widely used AI tools in checking grammar and spelling errors in text. Grammarly can be used on a variety of platforms, including web browsers, mobile apps, and Microsoft Word plugins. It provides the ability to detect grammar and spelling errors, as well as the ability to suggest corrections to users.",
+      },
+      {
+        title: "Hemingway Editor",
+        path: "http://www.hemingwayapp.com/",
+        description:
+          "Hemingway Editor is a free text checking tool that helps users check text complexity and provides recommendations for text modifications. This tool can help users find sentences that are too long, unnecessary synonyms, repeated paragraphs, and spelling errors.",
+      },
+      {
+        title: "ProWritingAid",
+        path: "https://prowritingaid.com/",
+        description:
+          "ProWritingAid text checking tool uses AI technology to check for errors in grammar, syntax, spelling, vocabulary usage, as well as sentence and paragraph length. The tool also provides recommendations for text revisions and helps users improve their writing skills.",
+      },
+      {
+        title: "AutoCrit",
+        path: "https://www.autocrit.com/",
+        description:
+          "The AutoCrit text checking tool is designed to help users find errors in their text and provide recommendations for correction. This tool uses AI technology to check for errors in grammar, syntax, vocabulary usage, as well as sentence and paragraph structure.",
+      },
+    ],
+  },
+  {
+    title: "AI engine helps search and create images",
+    elements: [
+      {
+        title: "Midjourney",
+        path: "https://www.midjourney.com/",
+        description:
+          "Midjourney is an artificial intelligence (AI) program and service that generates images based on natural language descriptions. It was created and managed by an independent lab based in San Francisco and is currently in public beta. Midjourney is only accessible through a bot on Discord and offers the service on a paid subscription.",
+      },
+      {
+        title: "StockAI",
+        path: "https://www.stockai.com/",
+        description:
+          "StockAI is a free photo search engine based on AI technology. With StockAI, users can search for photos using keywords and sort results by different criteria such as resolution, subject, color, and more. This makes searching for photos easier and faster than ever.",
+      },
+      {
+        title: "DALL·E 2",
+        path: "https://openai.com/product/dall-e-2",
+        description:
+          "DALL·E 2 is a new art and image creation tool from OpenAI, the company that makes ChatGPT. This tool allows users to create images using keywords or upload their own photos. In addition, users can also choose the style and color tone of the image.",
+      },
+      {
+        title: "Established AI",
+        path: "https://stability.ai/",
+        description:
+          "Stabiliti AI is a state-of-the-art visualization and modeling tool. This tool allows users to create regular types of images, three-dimensional images, animations and sounds.",
+      },
+      {
+        title: "Flair",
+        path: "https://withflair.ai/",
+        description:
+          "Flair is an advertising image creation tool that helps users create real studio-like images using product keywords, along with editing the style, tone and background of the image.",
+      },
+      {
+        title: "Lexica",
+        path: "https://lexica.art/",
+        description:
+          "Lexica is a multi-style image creation tool that allows users to search and create images with their own keywords and sizes.",
+      },
+      {
+        title: "DeepArt.io",
+        path: "https://deepart.io/",
+        description:
+          "DeepArt.io is an online application that allows users to create new paintings based on input images and a number of available painting templates. This application uses a Deep Learning model to analyze images and create a new painting with the style of the painting model.",
+      },
+      {
+        title: "Reverse Image Search",
+        path: "https://reverseimagesearch.com/",
+        description:
+          "Reverse Image Search is a free online image search engine that allows users to search for images similar or related to an input photo. This tool uses AI technology to analyze images and search for similar images on the web.",
+      },
+      {
+        title: "Pikachu",
+        path: "",
+        description:
+          "Pikazo is a mobile application that allows users to create new digital paintings by combining input images with different art styles. This app uses a Deep Learning model to analyze the image and create a new painting with the artist's style.",
+      },
+      {
+        title: "Let’s Enhance",
+        path: "https://letsenhance.io/",
+        description:
+          "Let's Enhance is an online tool that allows users to improve image quality using AI technology. This tool can increase the resolution, remove noise, and improve the color of the input image to create a new photo with better quality.",
+      },
+      {
+        title: "Google Lens",
+        path: "https://lens.google/",
+        description:
+          "Google Lens is a mobile application that allows users to search for information about images using AI technology. This application can read text, recognize objects, and search online for information related to the input image.",
+      },
+    ],
+  },
+  {
+    title: "AI engine supports audio and video generation",
+    elements: [
+      {
+        title: "Murf",
+        path: "https://murf.ai/",
+        description:
+          "AI engine that converts text into real human speech, allowing you to select speaker characteristics such as gender, age and occupation.",
+      },
+      {
+        title: "Synthesia",
+        path: "https://www.synthesia.io/",
+        description:
+          "Text-to-video software with a real-life virtual character as the host, you can choose the desired shape, tone and voice.",
+      },
+      {
+        title: "Supercreator",
+        path: "https://www.supercreator.ai/",
+        description:
+          "Tool used to create short videos, starting from writing a script, creating images related to the content and recording the video as desired.",
+      },
+      {
+        title: "Fliki AI",
+        path: "https://fliki.ai/",
+        description:
+          "Fliki AI is a tool developed by The Fliki that supports creating promotional videos and other content through AI from the image and audio data you input. Use Deep Learning technology to create sharper and more beautiful images.",
+      },
+    ],
+  },
+  {
+    title: "AI tools support making powerpoints and presentations",
+    elements: [
+      {
+        title: "Beautiful.ai",
+        path: "https://www.beautiful.ai/",
+        description: "https://www.beautiful.ai/",
+      },
+      {
+        title: "Emaze",
+        path: "https://www.emaze.com/",
+        description:
+          "Emaze is an online presentation creation platform with many beautiful and customizable PowerPoint templates. Emaze is powered by AI to suggest slide designs that match your content, helping you create impressive presentations.",
+      },
+      {
+        title: "Haiku Deck",
+        path: "https://www.haikudeck.com/",
+        description:
+          "Haiku Deck is a simple presentation creation application with thousands of beautiful slide templates. Haiku Deck provides an intuitive and easy-to-use interface that helps you focus on your content and create professional presentations.",
+      },
+    ],
+  },
+  {
+    title: "AI tools support design",
+    elements: [
+      {
+        title: "Adobe Sensei",
+        path: "https://www.adobe.com/sensei.html",
+        description:
+          "Adobe Sensei is an AI platform integrated into Adobe products such as Photoshop, Illustrator, and Premiere Pro. Sensei helps automate and improve design tasks, helping you optimize workflows and create higher quality products.",
+      },
+      {
+        title: "Runway ML",
+        path: "https://runwayml.com/",
+        description:
+          "Runway ML is an easy-to-use platform that allows you to leverage AI models to create unique and innovative content. This tool allows you to create images, videos, and other dynamic content without the need for programming skills or extensive AI knowledge.",
+      },
+      {
+        title: "Artist",
+        path: "https://artisto.my.com/",
+        description:
+          "Artisto is a photo and video editing app that uses AI to transform your images and videos into works of art. With Artisto, you can apply hundreds of different effects to your photos and videos to create creative and unique products.",
+      },
+      {
+        title: "Logojoy",
+        path: "https://logojoy.com/",
+        description:
+          "Logojoy (now Looka) is a logo creation tool that uses AI to design professional logos based on your ideas and requirements. Simply enter information about your company and design preferences, and Logojoy will automatically generate suitable logo suggestions.",
+      },
+      {
+        title: "Designhill Logo Maker",
+        path: "https://www.designhill.com/tools/logo-maker",
+        description:
+          "Designhill Logo Maker is an online logo maker that uses AI to help you design logos quickly and easily. You just need to enter information about your company, choose colors and design style, and the tool will automatically generate hundreds of logo suggestions for you to choose from. This tool currently does not allow Vietnamese users to access.",
+      },
+    ],
+  },
+  {
+    title: "AI tools support other work",
+    elements: [
+      {
+        title: "Sembly",
+        path: "https://www.semble.ai/",
+        description:
+          "The assistant converts text, notes content, and creates detailed data, helping you manage online meetings more effectively.",
+      },
+      {
+        title: "SheetAI",
+        path: "https://www.sheetai.app/",
+        description:
+          "Extension for Google Sheets with features that support easier data analysis and processing, such as data classification, creating answer sets, creating command formulas, etc.",
+      },
+      {
+        title: "Mem",
+        path: "https://get.mem.ai/",
+        description:
+          "The software creates workspaces, helps generate ideas and manage tasks by category, as well as the Smart Write feature that supports text editing and converting content into draft emails.",
+      },
+      {
+        title: "NativeChat",
+        path: "https://www.progress.com/nativechat",
+        description:
+          "Automated chatbots support multilingual communication and can respond 24/7. This chatbot can be applied in many fields such as financial consulting, marketing and the medical industry. This is a great solution to support customers quickly and effectively.",
+      },
+    ],
+  },
+];

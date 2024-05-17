@@ -21,7 +21,7 @@ export default function AiToolItem({ el, index }) {
 
         <p className="text-base line-clamp-5">{el.description}</p>
         <div className="flex items-center gap-4">
-          <Link to={el.path}>
+          <Link to={el.path} target="_blank">
             <Button className="w-max bg-sky-500 px-10 hover:bg-sky-600">
               Try it
             </Button>
